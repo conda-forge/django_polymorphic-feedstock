@@ -5,7 +5,7 @@ Home: https://github.com/chrisglass/django_polymorphic
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: Seamless Polymorphic Inheritance for Django Models
 
