@@ -1,16 +1,19 @@
-{% set version = "0.9.1" %}
+{% set name = "django_polymorphic" %}
+{% set version = "0.9.2" %}
+{% set md5 = "e2d08b6ed7b13d657a62677ad3e8aba8" %}
+{% set build = 0 %}
 
 package:
-    name: django_polymorphic
+    name: {{ name }}
     version: {{ version }}
 
 source:
-    fn: django_polymorphic-{{ version }}.tar.gz
-    url: https://pypi.python.org/packages/source/d/django_polymorphic/django_polymorphic-{{ version }}.tar.gz
-    md5: 1945d107d037d4c9b7fcdd8b14ce0348
+    fn: {{ name }}-{{ version }}.tar.gz
+    url: https://github.com/chrisglass/{{ name }}/archive/v{{ version }}.tar.gz
+    md5: {{ md5 }}
 
 build:
-    number: 0
+    number: {{ build }}
     preserve_egg_dir: True
     script: python setup.py install --single-version-externally-managed --record=record.txt
 
