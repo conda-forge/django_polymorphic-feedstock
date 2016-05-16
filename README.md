@@ -5,7 +5,7 @@ Home: https://github.com/chrisglass/django_polymorphic
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: Seamless Polymorphic Inheritance for Django Models
 
@@ -69,9 +69,10 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/django_polymorphic-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/django_polymorphic-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/django_polymorphic-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/django_polymorphic-feedstock) 
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/django_polymorphic-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/django_polymorphic-feedstock/branch/master)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/django-polymorphic-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/django-polymorphic-feedstock/branch/master)
 
 Current release info
 ====================
