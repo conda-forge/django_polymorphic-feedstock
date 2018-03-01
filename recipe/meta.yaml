@@ -1,44 +1,41 @@
-{% set name = "django_polymorphic" %}
 {% set version = "2.0.2" %}
-{% set sha256 = "48b7b4612dbb93a1f933da3f78caf233e838eff42fb2dd53d71d17640a2d684a" %}
-{% set build = 0 %}
 
 package:
-    name: {{ name }}
-    version: {{ version }}
+  name: django_polymorphic
+  version: {{ version }}
 
 source:
-    fn: {{ name }}-{{ version }}.tar.gz
-    url: https://github.com/django-polymorphic/django-polymorphic/archive/v{{ version }}.tar.gz
-    sha256: {{ sha256 }}
+  url: https://github.com/django-polymorphic/django-polymorphic/archive/v{{ version }}.tar.gz
+  sha256: 48b7b4612dbb93a1f933da3f78caf233e838eff42fb2dd53d71d17640a2d684a
 
 build:
-    noarch: python
-    number: 0
-    script: python -m pip install --no-deps --ignore-installed .
+  number: 0
+  noarch: python
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
-    build:
-        - python
-        - pip
-    run:
-        - python
-        - django >1.8,<2.0
+  build:
+    - python
+    - pip
+  run:
+    - python
+    - setuptools
+    - django >1.8,<2.0
 
 test:
-    imports:
-        - polymorphic
+  imports:
+    - polymorphic
 
 about:
-    home: https://github.com/chrisglass/django_polymorphic
-    license: BSD-3-Clause
-    license_file: LICENSE
-    license_family: BSD
-    summary: Seamless Polymorphic Inheritance for Django Models
-    dev_url: https://github.com/django-polymorphic/django-polymorphic
-    doc_url: https://django-polymorphic.readthedocs.io/en/stable/
+  home: https://github.com/chrisglass/django_polymorphic
+  license: BSD-3-Clause
+  license_file: LICENSE
+  license_family: BSD
+  summary: Seamless Polymorphic Inheritance for Django Models
+  dev_url: https://github.com/django-polymorphic/django-polymorphic
+  doc_url: https://django-polymorphic.readthedocs.io/en/stable/
 
 extra:
-    recipe-maintainers:
-        - kwilcox
-        - ocefpaf
+  recipe-maintainers:
+    - kwilcox
+    - ocefpaf
