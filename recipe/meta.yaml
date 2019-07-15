@@ -1,4 +1,4 @@
-{% set version = "2.0.3" %}
+{% set version = "2.1" %}
 
 package:
   name: django_polymorphic
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/django-polymorphic/django-polymorphic/archive/v{{ version }}.tar.gz
-  sha256: b50ab67303f785b7f12da93afe450e04d63af58403bcca88f779b16bf098ce14
+  sha256: 0c60fcac743903b94a6e4c74bd42202c3b9495359b97f329490ffefce2d36a5e
 
 build:
   number: 0
