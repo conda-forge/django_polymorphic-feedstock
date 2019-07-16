@@ -11,7 +11,7 @@ source:
 build:
   number: 0
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   build:
@@ -20,7 +20,7 @@ requirements:
   run:
     - python
     - setuptools
-    - django >1.8,<2.0
+    - django >=1.11
 
 test:
   imports:
