@@ -20,7 +20,7 @@ requirements:
   run:
     - python
     - setuptools
-    - django >=1.11
+    - django >=2.1
 
 test:
   imports:
