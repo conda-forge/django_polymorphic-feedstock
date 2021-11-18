@@ -1,30 +1,37 @@
-{% set version = "3.1" %}
+{% set name = "django_polymorphic" %}
+{% set version = "3.1.0" %}
+
 
 package:
-  name: django_polymorphic
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/django-polymorphic/django-polymorphic/archive/v{{ version }}.tar.gz
-  sha256: 8afb7fe84051292093939e71ce4e5687a6064c69706fa86a622d05d115e9045c
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/django-polymorphic-{{ version }}.tar.gz
+  sha256: d6955b5308bf6e41dcb22ba7c96f00b51dfa497a8a5ab1e9c06c7951bf417bf8
 
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
   run:
-    - python
+    - python >=3.6
     - setuptools
     - django >=2.1
 
 test:
   imports:
     - polymorphic
+    - polymorphic.admin
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/chrisglass/django_polymorphic
