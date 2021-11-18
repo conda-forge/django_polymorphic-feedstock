@@ -27,7 +27,6 @@ requirements:
 test:
   imports:
     - polymorphic
-    - polymorphic.admin
   commands:
     - pip check
   requires:
