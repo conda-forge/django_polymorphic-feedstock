@@ -31,7 +31,7 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-django_polymorphic-green.svg)](https://anaconda.org/conda-forge/django_polymorphic) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/django_polymorphic.svg)](https://anaconda.org/conda-forge/django_polymorphic) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/django_polymorphic.svg)](https://anaconda.org/conda-forge/django_polymorphic) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/django_polymorphic.svg)](https://anaconda.org/conda-forge/django_polymorphic) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-django__polymorphic-green.svg)](https://anaconda.org/conda-forge/django_polymorphic) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/django_polymorphic.svg)](https://anaconda.org/conda-forge/django_polymorphic) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/django_polymorphic.svg)](https://anaconda.org/conda-forge/django_polymorphic) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/django_polymorphic.svg)](https://anaconda.org/conda-forge/django_polymorphic) |
 
 Installing django_polymorphic
 =============================
