@@ -1,5 +1,5 @@
 {% set name = "django_polymorphic" %}
-{% set version = "4.10.4" %}
+{% set version = "4.10.5" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a020c8d4b0d75ba44ad0a253589a823db9fe521fcbd1a7f121f9eefcbb9ec51f
+  sha256: 2bfc820cc4d40eff05446fddf66f8bc08a1018cf6c5d0836487d7056c5931d2f
 
 build:
   number: 0
